@@ -2,7 +2,7 @@
 
 set -e
 
-echo Waiting for databaseeeeee...
+echo Waiting for database...
 
 while ! pg_isready -h ${PGHOST} -p ${PGPORT}; do sleep 0.25; done; 
 
